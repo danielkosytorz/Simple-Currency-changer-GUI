@@ -34,10 +34,10 @@ def currency_exchange_option(what_currency, for_what_currency, type):
     label_output.place(anchor='n', relx=0.5, rely=0.5, relwidth=0.3, relheight=0.1)
 
     if type == 0:
-        button_convert = tk.Button(frame, text="convert",  command=lambda: convert(int(entry_value.get()), type, for_what_currency, label_output))
+        button_convert = tk.Button(frame, text="Przelicz",  command=lambda: convert(int(entry_value.get()), type, for_what_currency, label_output))
         button_convert.place(anchor='n', relx=0.5, rely=0.3, relwidth=0.3, relheight=0.1)
     elif type == 1:
-        button_convert = tk.Button(frame, text="convert",  command=lambda: convert(int(entry_value.get()), type, what_currency,label_output))
+        button_convert = tk.Button(frame, text="Przelicz",  command=lambda: convert(int(entry_value.get()), type, what_currency,label_output))
         button_convert.place(anchor='n', relx=0.5, rely=0.3, relwidth=0.3, relheight=0.1)
 
     button_back = tk.Button(frame, text="Wroc do menu", command=lambda: frame.destroy())
